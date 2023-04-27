@@ -1,5 +1,7 @@
 # Sentiment Analysis with Twitter-Roberta
-This project is a Python script for performing sentiment analysis on Twitter data using the Twitter-Roberta model. The script can be used to analyze tweets from a CSV file or tweets from a specific user on Twitter using the Twitter API.
+
+This script uses the Hugging Face Transformers library to perform sentiment analysis on tweets using the Twitter-Roberta model. The script can analyze the sentiment of tweets from a static CSV file or from the Twitter API.
+
 
 ## Installation
 The script requires the following Python packages to be installed:
@@ -16,6 +18,16 @@ configparser  |
 You can install these packages using pip:
 
 ```pip install transformers scipy pandas tweepy configparser```
+
+## Config
+
+```[twitter]
+API_key = <your_API_key>
+API_key_secret = <your_API_key_secret>
+access_token = <your_access_token>
+access_token_secret = <your_access_token_secret>
+```
+
 
 ## Usage
 
