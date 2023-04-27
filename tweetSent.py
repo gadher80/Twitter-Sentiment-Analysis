@@ -70,4 +70,4 @@ if __name__ =='__main__':
     tweets = api.user_timeline(screen_name='@realDonaldTrump', count=200, tweet_mode='extended')
     #make df
     dfTweetsFromAPI = pd.DataFrame([tweet.full_text for tweet in tweets], columns=['tweets'])
-    df['sentiment'] = df['tweets'].apply(get_sentiment)
+    dfTweetsFromAPI['sentiment'] = dfTweetsFromAPI['tweets'].apply(get_sentiment)
