@@ -2,6 +2,18 @@
 
 This script uses the Hugging Face Transformers library to perform sentiment analysis on tweets using the Twitter-Roberta model. The script can analyze the sentiment of tweets from a static CSV file or from the Twitter API.
 
+## Data Pipeline
+
+1. Data source: The data source for this pipeline is two fold: Either, we have a static CSV file that contains pre-collected tweets or Second, we use the Twitter API to collect tweets in real-time from a specific user.
+
+2. Data cleaning: Before we can analyze the tweets, we need to clean and preprocess them. This involves removing duplicate entries, handling missing values, and converting the text into a format suitable for analysis. In this code example, the get_sentiment() function preprocesses the tweets by replacing user mentions and URLs with generic placeholders.
+
+3. Data extraction: Once the data is cleaned, we can extract the features we need for analysis. In this code example, we extract the sentiment of each tweet using a pre-trained model and tokenizer from the Hugging Face Transformers library.
+
+4. Model execution: After the features are extracted, we can execute our model to make predictions. In this example, the sentiment analysis model predicts whether the tweet is positive, negative, or neutral.
+
+5. Data visualization: Finally, we can visualize the results of our analysis. In this code example, the sentiment analysis results are added to a DataFrame and printed to the console. However, in a real-world application, we might use a dashboarding tool like Grafana to visualize the results in real-time.
+
 
 ## Installation
 The script requires the following Python packages to be installed:
